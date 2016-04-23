@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transationlogin"
+    android:id="@+id/activity_signup_mainview"
+    tools:context=".view.activity.SignupActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:textColorHint="@color/colorwhite"
+        android:id="@+id/edittxt_register_email"
+        android:hint="Email"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorwhite"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@id/edittxt_register_email"
+        android:id="@+id/edittxt_register_fullname"
+        android:hint="Full name"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorwhite"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@id/edittxt_register_fullname"
+        android:id="@+id/edittxt_register_username"
+        android:hint="Username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorwhite"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/edittxt_register_password"
+        android:inputType="textPassword"
+        android:layout_below="@id/edittxt_register_username"
+        android:hint="Password"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorwhite"
+        android:inputType="date"
+        android:id="@+id/edittxt_register_birthdate"
+        android:layout_below="@id/edittxt_register_password"
+        android:hint="BirthDate"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/button_bg_transperant_with_border"
+        android:id="@+id/btn_register_signup"
+        android:layout_below="@id/edittxt_register_birthdate"
+        android:text="@string/login_text"/>
+
+</RelativeLayout>

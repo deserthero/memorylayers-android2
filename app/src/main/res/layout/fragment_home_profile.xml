@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.memorylayers.ml.view.fragment.HomeProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtview_profile_welcomeuser"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:textColor="#0f22ff"
+        android:text="Hello, " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtview_profile_birthdate"
+        android:layout_below="@id/txtview_profile_welcomeuser"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:textColor="#0f22ff"
+        android:text="Your Birthdate is , " />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:id="@+id/btn_profile_signout"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@id/txtview_profile_birthdate"/>
+
+</RelativeLayout>
